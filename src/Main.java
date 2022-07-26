@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -18,6 +19,11 @@ public class Main {
         public void mouseClicked(MouseEvent e) {
             add(e);
         }
+        @Override
+        public void mouseEntered(MouseEvent e) {
+            panel.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        }
+
     });
 
 
